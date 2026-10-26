@@ -4,7 +4,7 @@ An online music quiz for solo players or groups. Players join with a room code, 
 
 ## Run locally
 
-Install the .NET 8 SDK and run:
+Install the .NET 10 SDK and run:
 
 ```sh
 dotnet run
@@ -14,13 +14,13 @@ Open the local address printed by the application. Spotify embeds require an int
 
 ## Publish on Winhost
 
-Publish a framework-dependent build with the .NET 8 SDK:
+Publish a framework-dependent build with the .NET 10 SDK:
 
 ```sh
 dotnet publish -c Release -o publish
 ```
 
-Upload the contents of `publish` to the `/years` IIS application directory. The published `web.config` uses out-of-process ASP.NET Core hosting. The site needs the ASP.NET Core 8 hosting runtime and the `/years` directory configured as an Application Starting Point. The IIS application pool must be able to write to `/years/App_Data`.
+Upload the contents of `publish` to the `/years` IIS application directory. The published `web.config` uses out-of-process ASP.NET Core hosting. The site needs the ASP.NET Core 10 hosting runtime and the `/years` directory configured as an Application Starting Point. The IIS application pool must be able to write to `/years/App_Data`.
 
 Keep `App_Data/state.json` private and preserve it during deployments: it stores rooms, session tokens and leaderboard scores. Do not overwrite it with the publish output. To avoid file locking, take the application offline during deployment, then bring it back online. Restart the app after updating songs. The root site configuration is separate from the application's `web.config`.
 
