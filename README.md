@@ -1,6 +1,6 @@
 # Year on the Record
 
-An online music quiz for solo players or groups. Players join with a room code, listen to Spotify embeds, and guess the original release year. The host chooses an inclusive year range and a five-song points or nearest-wins format. Completed scores appear on a leaderboard. The catalogue currently contains 809 curated tracks, including 118 per decade from the 1960s through the 2010s and 40 from the 2020s.
+An online music quiz for solo players or groups. Players join with a room code, listen to Spotify embeds, and guess the original release year. The host chooses an inclusive year range of at least 30 calendar years and a five-song points or nearest-wins format. Completed scores appear on a leaderboard. The catalogue currently contains 809 curated tracks, including 118 per decade from the 1960s through the 2010s and 40 from the 2020s.
 
 ## Run locally
 
